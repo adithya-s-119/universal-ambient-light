@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="pref_list_framerate">
+    <item>10 fps</item>
+    <item>15 fps</item>
+    <item>24 fps</item>
+    <item>30 fps</item>
+    <item>60 fps</item>
+  </string-array>
+  <string name="app_name">Universal Ambient Light</string>
+  <string name="pref_title">Настройки</string>
+  <!-- notification button -->
+  <string name="notification_exit_button">Выход</string>
+  <!-- Network scanner -->
+  <string name="scanner_description">Автоматически найти WLED и Hyperion устройства в сети</string>
+  <string name="scanner_retry_button">Повторить</string>
+  <string name="scanner_scan_devices">Сканировать устройства</string>
+  <string name="scanner_scanning">Сканирование сети…</string>
+  <string name="scanner_found_devices">Найденные устройства:</string>
+  <string name="scanner_no_devices_found">Устройства не найдены</string>
+  <string name="scanner_device_wled">WLED</string>
+  <string name="scanner_device_hyperion">Hyperion</string>
+  <string name="scanner_device_unknown">Неизвестно</string>
+  <string name="scanner_device_info">%1$s на %2$s:%3$d</string>
+  <string name="scanner_cancel">Отмена</string>
+  <!-- Network Scanner result -->
+  <!-- Connection settings -->
+  <string name="pref_group_connection">Подключение</string>
+  <string name="pref_title_host">Хост</string>
+  <string name="pref_title_port">Порт</string>
+  <string name="pref_title_led_start_corner">Начальный угол LED</string>
+  <string name="pref_title_led_direction">Направление LED</string>
+  <string name="pref_title_led_layout">Раскладка LED</string>
+  <string name="pref_summary_led_layout">Просмотр и настройка раскладки светодиодов</string>
+  <string name="led_layout_top_count_label">Количество LED сверху</string>
+  <string name="led_layout_right_count_label">Количество LED справа</string>
+  <string name="led_layout_bottom_count_label">Количество LED снизу</string>
+  <string name="led_layout_left_count_label">Количество LED слева</string>
+  <string name="led_layout_total_leds">Всего LED: %1$d</string>
+  <string name="led_layout_active_sides">Активные стороны</string>
+  <string name="led_layout_side_top">Верх</string>
+  <string name="led_layout_side_right">Право</string>
+  <string name="led_layout_side_bottom">Низ</string>
+  <string name="led_layout_side_left">Лево</string>
+  <string name="led_layout_bottom_gap_label">Пропуск снизу (для саундбара)</string>
+  <string name="led_layout_capture_margin_label">Отступ от края захвата (%)</string>
+  <string name="led_layout_capture_margin_top_label">Отступ сверху (%)</string>
+  <string name="led_layout_capture_margin_top_help">0–40%. Отступ от верхнего края экрана.</string>
+  <string name="led_layout_capture_margin_right_label">Отступ справа (%)</string>
+  <string name="led_layout_capture_margin_right_help">0–40%. Отступ от правого края экрана.</string>
+  <string name="led_layout_capture_margin_bottom_label">Отступ снизу (%)</string>
+  <string name="led_layout_capture_margin_bottom_help">0–40%. Отступ от нижнего края экрана.</string>
+  <string name="led_layout_capture_margin_left_label">Отступ слева (%)</string>
+  <string name="led_layout_capture_margin_left_help">0–40%. Отступ от левого края экрана.</string>
+    <string name="led_layout_offset_label">Смещение LED (шагов по периметру)</string>
+    <string name="led_layout_offset_help">Положительное — по направлению обхода, отрицательное — против.</string>
+    <string name="led_layout_scan_depth_label">Глубина сканирования (%)</string>
+    <string name="led_layout_scan_depth_help">Глубина области усреднения цвета (1-50%).</string>
+  <string name="led_layout_legend_title">Легенда:</string>
+  <string name="led_layout_legend_first_led">LED #1 (первый)</string>
+  <string name="led_layout_legend_active_leds">Активные LED</string>
+  <string name="led_layout_legend_disabled_leds">Отключенные LED</string>
+  <string name="led_layout_legend_screen">Экран</string>
+  <string name="led_side_mode_on">Вкл</string>
+  <string name="led_side_mode_off">Откл</string>
+  <string name="led_side_mode_none">Нет</string>
+  <string name="led_direction_clockwise">По часовой стрелке</string>
+  <string name="led_direction_counterclockwise">Против часовой стрелки</string>
+  <string name="led_corner_top_left">Верхний левый</string>
+  <string name="led_corner_top_right">Верхний правый</string>
+  <string name="led_corner_bottom_right">Нижний правый</string>
+  <string name="led_corner_bottom_left">Нижний левый</string>
+  <string name="action_back">Назад</string>
+  <string name="action_ok">ОК</string>
+  <string name="action_cancel">Отмена</string>
+  <string name="action_close">Закрыть</string>
+  <string name="action_copy">Копировать</string>
+  <string name="home_effects">Эффекты</string>
+  <string name="home_toggle_power">Включение подсветки</string>
+  <string name="home_settings">Настройки</string>
+  <string name="unit_ms">%1$d мс</string>
+  <string name="debug_info_title">Отладочная информация</string>
+  <string name="debug_info_copied">Скопировано в буфер обмена</string>
+  <string name="pref_category_debug">Отладка</string>
+  <string name="pref_title_device_info">Информация об устройстве</string>
+  <string name="pref_summary_device_info">Показать данные устройства для отладки</string>
+  <string name="scan_scanning">Сканирование: %1$s</string>
+  <string name="scan_hostname">Имя хоста: %1$s</string>
+  <string name="scan_protocol">Протокол: %1$s</string>
+  <string name="rating_stars_desc">Звёзд: %1$d</string>
+  <string name="usb_service_unavailable">USB-сервис недоступен на этом устройстве</string>
+  <string name="usb_no_serial_devices">USB-устройства не найдены. Подключите устройство через USB OTG</string>
+  <string name="usb_permission_denied_toast">В доступе к USB-устройству отказано. Разрешите доступ к USB.</string>
+  <string name="usb_permission_prompt">Подтвердите доступ к USB-устройству</string>
+  <string name="pref_title_priority">Приоритет</string>
+  <string name="pref_title_reconnect">Переподключение</string>
+  <string name="pref_title_reconnect_delay">Задержка переподключения</string>
+  <string name="pref_title_standby_keepalive">Работа в режиме сна</string>
+  <string name="pref_summary_standby_keepalive">Продолжать слать данные на ленту при выключенном экране ТВ. Если выключено — приложение гасит ленту и ничего не отправляет в режиме сна, возобновляя работу при включении экрана</string>
+  <!-- Capture source -->
+  <string name="pref_title_capture_source">Источник захвата</string>
+  <string-array name="pref_list_capture_source">
+    <item>Экран</item>
+    <item>Камера</item>
+  </string-array>
+  <string-array name="pref_list_capture_source_values">
+    <item>screen</item>
+    <item>camera</item>
+  </string-array>
+  <string name="pref_title_camera_setup">Настройка углов камеры</string>
+  <string name="pref_summary_camera_setup">Настройте 4 угла для совмещения с экраном ТВ в кадре камеры</string>
+  <string name="camera_setup_title">Настройка камеры</string>
+  <string name="camera_setup_instruction">Перетащите 4 угла, чтобы совместить их с краями экрана ТВ</string>
+  <string name="camera_auto_frame_button">Найти телевизор</string>
+  <string name="camera_auto_frame_not_found">Экран не найден — углы не изменены</string>
+  <string name="camera_auto_frame_too_dark">Слишком темно — включите телевизор и повторите</string>
+  <string name="camera_auto_frame_no_screen">В кадре нет ничего похожего на экран — наведите камеру на телевизор</string>
+  <string name="camera_auto_frame_no_frames">Камера не отдала ни одного кадра</string>
+  <string name="camera_setup_save">Сохранить</string>
+  <string name="camera_setup_reset">Сбросить</string>
+  <string name="camera_permission_required">Для режима камеры необходимо разрешение на использование камеры</string>
+  <string name="camera_grant_permission">Дать разрешение</string>
+  <string name="camera_capturing_status">Камера захватывает…</string>
+  <!-- Capturing settings -->
+  <!-- Capture Method -->
+  <string name="pref_title_capture_method">Метод захвата</string>
+  <string-array name="pref_list_capture_method">
+    <item>MediaProjection (Стандартный)</item>
+    <item>Scrcpy (ADB, ~30мс) ★★★★★</item>
+    <item>ADB Stream (H.264, ~50мс)</item>
+    <item>Screencap (Shell / ADB)</item>
+    <item>Screencap (Root)</item>
+    <item>ADB (Скриншот, ~200мс)</item>
+    <item>Accessibility (Android 11+)</item>
+    <item>MTK аппаратный захват (Root)</item>
+  </string-array>
+  <string-array name="pref_list_capture_method_values">
+    <item>media_projection</item>
+    <item>scrcpy</item>
+    <item>adb_stream</item>
+    <item>screencap_shell</item>
+    <item>screencap_root</item>
+    <item>adb_local</item>
+    <item>accessibility</item>
+    <item>mtk_thal_capture</item>
+  </string-array>
+
+  <string name="pref_title_adb_port">ADB Порт</string>
+  <string name="pref_btn_adb_pair">Проверить подключение ADB</string>
+  <string name="pref_summary_adb_pair">Проверить соединение и авторизовать ключ на ТВ</string>
+  <string name="adb_pair_title">Авторизация ADB</string>
+  <string name="adb_pair_instruction">При первом подключении ТВ покажет диалог «Разрешить отладку по Wi-Fi?» — нажмите Разрешить на экране ТВ. Убедитесь, что в настройках разработчика включена Отладка по Wi-Fi.</string>
+  <string name="adb_test_success">Подключено! Ключ ADB авторизован.</string>
+  <string name="adb_test_failed">Ошибка подключения: %s\n\nУбедитесь, что включена Отладка по Wi-Fi, и разрешите подключение на экране ТВ.</string>
+  <string name="adb_status_label">Настройки разработчика: %1$s\nADB: %2$s</string>
+  <string name="adb_status_on">ВКЛ</string>
+  <string name="adb_status_off">ВЫКЛ</string>
+  <string name="adb_btn_open_dev_options">Открыть настройки разработчика</string>
+  <string name="adb_btn_how_to_enable_dev_options">Как включить настройки разработчика</string>
+  <string name="adb_btn_open_wireless_debug">Открыть Отладку по Wi-Fi</string>
+  <!-- ADB pairing (Android 11+) -->
+  <string name="adb_pair_code_title">Сопряжение по коду (Android 11+, один раз)</string>
+  <string name="adb_pair_code_hint">6-значный код сопряжения</string>
+  <string name="adb_pair_port_hint">Порт сопряжения (с того же экрана)</string>
+  <string name="adb_pair_code_instruction">Ручной способ: откройте Отладку по Wi-Fi → «Подключить устройство с помощью кода» и введите ПОРТ и 6-значный КОД с того экрана. Кнопка «Сопрячь автоматически» выше проще — она читает код сама и сопрягается, не уходя с того экрана.</string>
+  <string name="adb_pair_manual_label">Ввести вручную</string>
+  <string name="adb_pair_btn">Сопрячь</string>
+  <string name="adb_pairing">Сопряжение…</string>
+  <string name="adb_pair_success">Сопряжено! Теперь нажмите «Проверить подключение ADB».</string>
+  <string name="adb_pair_failed">Ошибка сопряжения: %1$s</string>
+  <string name="adb_autopair_btn">Сопрячь автоматически (Спец. возможности)</string>
+  <string name="adb_autopair_waiting">Включите Отладку по Wi-Fi, если нужно — приложение откроет её, само прочитает код и выполнит сопряжение.</string>
+  <string name="adb_autopair_need_accessibility">Сначала включите Спец. возможности для приложения на следующем экране, затем снова нажмите «Сопрячь автоматически».</string>
+  <string name="adb_autopair_timeout">Время вышло. Убедитесь, что Отладка по Wi-Fi включена, и снова нажмите «Сопрячь автоматически».</string>
+  <string name="adb_enable_accessibility_toast">Найдите «%1$s» в списке, откройте и включите — затем вернитесь и нажмите «Сопрячь автоматически».</string>
+  <string name="adb_autopair_consent_title">Автоматическое сопряжение — подтвердите</string>
+  <string name="adb_autopair_consent_text">Для захвата экрана приложение подключается к собственному ADB этого устройства по localhost (127.0.0.1). С вашего разрешения оно: откроет «Отладку по Wi-Fi», прочитает одноразовый 6-значный код сопряжения с того экрана через службу спец. возможностей и само нажмёт «Подключить устройство с помощью кода». Подключение только локальное, другие настройки не меняются, ничего за пределы устройства не отправляется. Продолжить?</string>
+  <string name="adb_autopair_consent_continue">Продолжить</string>
+  <string name="error_adb_pairing_required">Нужно сопряжение ADB. Откройте Настройки → Метод захвата → Проверить подключение ADB → Сопрячь по коду.</string>
+  <string name="adb_legacy_title">Android 10 и старше</string>
+  <string name="adb_legacy_btn">Подключить (без сопряжения)</string>
+  <string name="adb_toast_dev_options_help">Сначала включите настройки разработчика: «О телефоне» → 7 раз тапнуть по «Номер сборки»</string>
+  <string name="adb_toast_cannot_open_dev">Не удалось открыть настройки разработчика на этом устройстве</string>
+  <string name="adb_toast_cannot_open_wireless">Не удалось открыть Отладку по Wi-Fi на этом устройстве</string>
+  <string name="accessibility_enable_prompt">Пожалуйста, включите Специальные возможности для Universal Ambient Light</string>
+
+  <string name="pref_group_capturing">Захват</string>
+  <string name="pref_title_framerate">Частота захвата</string>
+  <string name="pref_title_capture_quality">Качество захвата</string>
+  <string name="pref_title_color_brightness">Яркость</string>
+  <string name="pref_title_color_contrast">Контрастность</string>
+  <string name="pref_title_color_black_level">Уровень черного</string>
+  <string name="pref_title_color_white_level">Уровень белого</string>
+  <string name="pref_title_color_saturation">Насыщенность</string>
+  <string name="pref_title_color_processing_enabled">Обработка цвета</string>
+  <string name="pref_group_color_per_channel">Поканальная коррекция (R/G/B)</string>
+  <string name="pref_title_color_brightness_r">Яркость R</string>
+  <string name="pref_title_color_brightness_g">Яркость G</string>
+  <string name="pref_title_color_brightness_b">Яркость B</string>
+  <string name="pref_title_color_gamma_r">Гамма R</string>
+  <string name="pref_title_color_gamma_g">Гамма G</string>
+  <string name="pref_title_color_gamma_b">Гамма B</string>
+  <string name="pref_color_preview_title">Превью (с применением обработки)</string>
+  <string name="pref_color_preview_hint">Отражает то, что будет отправлено на LED-ленту. Анимации на главном экране НЕ используют эти настройки.</string>
+  <string name="pref_group_border_detection">Автоопределение чёрных полос (letterbox)</string>
+  <string name="pref_title_border_detection_enabled">Автоопределение чёрных полос</string>
+  <string name="pref_summary_border_detection_enabled">Игнорировать чёрные полосы вокруг картинки (16:9, 1.85:1, 2.39:1). По умолчанию выключено.</string>
+  <string name="pref_title_border_threshold">Порог чёрного (RGB 0–64)</string>
+  <string name="pref_title_border_check_interval">Интервал детекции (кадры)</string>
+  <string name="pref_group_camera_idle">Режим сна (камера)</string>
+  <string name="pref_title_camera_idle_enabled">Включить режим сна</string>
+  <string name="pref_summary_camera_idle_enabled">При захвате с камеры телевизор не передаёт сигнал перехода в режим ожидания, поэтому выключенный экран продолжает передавать на ленту шум матрицы. При включении подсветка отключается, как только изображение становится тёмным, и передача кадров возобновляется при появлении картинки. По умолчанию выключено.</string>
+  <string name="pref_title_camera_idle_timeout">Задержка перед переходом в сон (секунды)</string>
+  <string name="pref_title_camera_idle_dark_level">Порог тёмного экрана (0–96)</string>
+  <string name="pref_title_camera_idle_motion_level">Порог чувствительности к движению (1–64)</string>
+  <string name="pref_title_camera_idle_static">Переходить в сон и на статичном изображении</string>
+  <string name="pref_summary_camera_idle_static">При включении передача кадров также приостанавливается, если изображение перестаёт меняться (пауза видео, статичное меню); лента сохраняет последние отображённые цвета. По умолчанию выключено, так как продолжительная статичная сцена «заморозит» цвета на ленте.</string>
+  <string name="unit_rgb">RGB</string>
+  <string name="unit_frames">кадров</string>
+  <string name="unit_seconds">с</string>
+  <string-array name="pref_list_capture_quality">
+    <item>Низкое (64px)</item>
+    <item>Среднее (128px)</item>
+    <item>Высокое (256px)</item>
+    <item>Ультра (512px)</item>
+    <item>720p (нестаб.)</item>
+    <item>1080p (нестаб.)</item>
+    <item>1440p (нестаб.)</item>
+    <item>2160p (нестаб.)</item>
+  </string-array>
+  <string-array name="pref_list_capture_quality_values">
+    <item>64</item>
+    <item>128</item>
+    <item>256</item>
+    <item>512</item>
+    <item>720</item>
+    <item>1080</item>
+    <item>1440</item>
+    <item>2160</item>
+  </string-array>
+  <!-- General settings -->
+  <string name="pref_group_general">Общие</string>
+  <string name="pref_title_boot">Запуск при загрузке</string>
+  <string name="pref_title_language">Язык</string>
+  <string name="pref_key_language">language</string>
+  <string-array name="pref_list_language">
+    <item>По умолчанию</item>
+    <item>English</item>
+    <item>Русский</item>
+    <item>Deutsch</item>
+  </string-array>
+  <string-array name="pref_list_language_values">
+    <item>default</item>
+    <item>en</item>
+    <item>ru</item>
+    <item>de</item>
+  </string-array>
+
+  <string name="error_empty_host">Не указан адрес сервера. Откройте Настройки → Подключение → Хост и введите IP устройства с Hyperion/HyperHDR/WLED либо нажмите Сканировать устройства</string>
+  <string name="error_empty_port">Не указан порт. Откройте Настройки → Подключение → Порт (19400 для Hyperion, 4048 для WLED/DDP)</string>
+  <string name="error_invalid_port">Недопустимый порт: %1$d. Значение должно быть от 1 до 65535</string>
+  <string name="setup_required_title">Нужно настроить подключение</string>
+  <string name="setup_required_open_settings">Открыть настройки</string>
+  <string name="setup_required_cancel">Отмена</string>
+  <string name="error_invalid_led_counts">Суммарное число LED равно 0 — задайте количество по сторонам в Настройки → Раскладка LED</string>
+  <string name="error_server_unreachable">Не удалось подключиться к серверу. Проверьте настройки и запущен ли сервер</string>
+  <string name="error_adalight_unreachable">Не удалось подключиться к Adalight. Убедитесь: 1) Устройство подключено через USB OTG, 2) Разрешение USB предоставлено, 3) Верная скорость (baud rate)</string>
+  <string name="error_connection_lost">Связь с сервером потеряна, остановка захвата</string>
+  <string name="error_adalight_connection_lost">Связь с Adalight потеряна, остановка захвата</string>
+  <string name="error_media_projection_denied">В доступе к экрану отказано. Пожалуйста, разрешите доступ при запросе</string>
+  <string name="error_screen_recording_not_available">Запись экрана недоступна на этом устройстве</string>
+  <string name="url_dialog_title">Открыть ссылку</string>
+  <string name="url_dialog_message">Отсканируйте QR-код или скопируйте ссылку ниже, чтобы открыть её в браузере:</string>
+  <string name="url_dialog_qr_description">QR-код для ссылки</string>
+  <string name="url_dialog_open_link">Открыть ссылку</string>
+  <string name="help_readme_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/README_RU.md</string>
+  <string name="support_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/SUPPORT.md</string>
+  <string name="notification_channel_label">Уведомления Universal Ambient Light</string>
+  <string name="notification_description">Идет захват содержимого экрана</string>
+  <string name="pref_title_use_avg_color">Средний цвет экрана</string>
+  <string name="pref_title_connection_type">Тип подключения</string>
+  <string-array name="pref_list_connection_type">
+    <item>Hyperion</item>
+    <item>WLED</item>
+    <item>Adalight</item>
+    <item>Home Assistant</item>
+  </string-array>
+  <string-array name="pref_list_connection_type_values">
+    <item>hyperion</item>
+    <item>wled</item>
+    <item>adalight</item>
+    <item>homeassistant</item>
+  </string-array>
+  <string name="pref_title_adalight_baudrate">Скорость Adalight</string>
+  <string-array name="pref_list_adalight_baudrate">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200 (рекомендуется)</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+  </string-array>
+  <string-array name="pref_list_adalight_baudrate_values" translatable="false">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+  </string-array>
+  <string name="pref_title_wled_color_order">Порядок цветов WLED</string>
+  <string-array name="pref_list_wled_color_order">
+    <item>RGB</item>
+    <item>GRB</item>
+    <item>BRG</item>
+    <item>RBG</item>
+    <item>GBR</item>
+    <item>BGR</item>
+  </string-array>
+  <string-array name="pref_list_wled_color_order_values">
+    <item>rgb</item>
+    <item>grb</item>
+    <item>brg</item>
+    <item>rbg</item>
+    <item>gbr</item>
+    <item>bgr</item>
+    </string-array>
+  
+  <!-- Smoothing settings -->
+  <string name="pref_group_smoothing">Сглаживание</string>
+  <string name="pref_title_smoothing_enabled">Включить сглаживание</string>
+  <string name="pref_title_smoothing_preset">Пресет сглаживания</string>
+  <string-array name="pref_list_smoothing_preset">
+    <item>Выключено</item>
+    <item>Быстрый отклик</item>
+    <item>Сбалансированный</item>
+    <item>Плавный</item>
+  </string-array>
+  <string-array name="pref_list_smoothing_preset_values">
+    <item>off</item>
+    <item>responsive</item>
+    <item>balanced</item>
+    <item>smooth</item>
+  </string-array>
+  <string name="pref_title_settling_time">Время перехода (мс)</string>
+  <string name="pref_title_output_delay">Задержка вывода (мс)</string>
+  <string name="pref_title_update_frequency">Частота обновления</string>
+  <string-array name="pref_list_update_frequency">
+    <item>20 Гц</item>
+    <item>25 Гц</item>
+    <item>30 Гц</item>
+    <item>40 Гц</item>
+    <item>50 Гц</item>
+    <item>60 Гц</item>
+  </string-array>
+  <string-array name="pref_list_update_frequency_values">
+    <item>20</item>
+    <item>25</item>
+    <item>30</item>
+    <item>40</item>
+    <item>50</item>
+    <item>60</item>
+  </string-array>
+  
+  <!-- WLED advanced settings -->
+  <string name="pref_title_wled_protocol">Протокол WLED</string>
+  <string-array name="pref_list_wled_protocol">
+    <item>UDP Raw (порт 19446)</item>
+    <item>DDP (порт 4048)</item>
+  </string-array>
+  <string-array name="pref_list_wled_protocol_values">
+    <item>udp_raw</item>
+    <item>ddp</item>
+  </string-array>
+  <string name="pref_title_wled_rgbw">WLED RGBW</string>
+  <string name="pref_summary_wled_rgbw_raw">На порту 19446 не работает — там нет белого канала. Для RGBW-ленты нужен DDP</string>
+  <string name="pref_title_wled_brightness">Яркость WLED</string>
+  <string name="pref_summary_wled_brightness_max">255 — цвета уходят без изменений</string>
+  <!-- Home Assistant -->
+  <string name="pref_title_ha_token">Токен доступа</string>
+  <string name="pref_summary_ha_token_empty">Долгоживущий токен из профиля Home Assistant → Безопасность</string>
+  <string name="pref_summary_ha_token_set">Токен сохранён</string>
+  <string name="pref_title_ha_lamps">Лампы и зоны</string>
+  <string name="pref_summary_ha_lamps_empty">Лампы не настроены</string>
+  <string name="pref_summary_ha_lamps_count">Настроено ламп: %1$d</string>
+  <string name="pref_title_ha_update_interval">Частота обновлений</string>
+  <string-array name="pref_list_ha_update_interval">
+    <item>10 раз в секунду (100 мс)</item>
+    <item>150 мс</item>
+    <item>4 раза в секунду (250 мс)</item>
+    <item>2 раза в секунду (500 мс)</item>
+    <item>1 раз в секунду</item>
+    <item>Раз в 2 секунды</item>
+    <item>Раз в 5 секунд</item>
+  </string-array>
+  <string name="pref_title_ha_change_threshold">Порог изменения цвета</string>
+  <string name="pref_summary_ha_change_threshold">0–255. Обновление уходит, только если цвет зоны изменился не меньше чем на столько</string>
+  <string name="pref_title_ha_transition">Плавность перехода</string>
+  <string-array name="pref_list_ha_transition">
+    <item>Выкл</item>
+    <item>150 мс</item>
+    <item>300 мс</item>
+    <item>500 мс</item>
+    <item>1 секунда</item>
+    <item>2 секунды</item>
+  </string-array>
+  <string name="pref_title_ha_brightness_mode">Яркость</string>
+  <string-array name="pref_list_ha_brightness_mode">
+    <item>Следует за картинкой</item>
+    <item>Не менять</item>
+  </string-array>
+  <string name="pref_title_ha_brightness">Предел яркости</string>
+  <string name="pref_summary_ha_brightness_max">255 — полная яркость лампы</string>
+  <string name="pref_title_ha_dark_off">Гасить на тёмных сценах</string>
+  <string name="pref_summary_ha_dark_off">Лампы гаснут, когда зона темнее порога, и включаются вместе с картинкой</string>
+  <string name="pref_title_ha_dark_threshold">Порог темноты</string>
+  <string name="pref_title_ha_turn_off_lights">Гасить лампы при остановке</string>
+  <string name="pref_summary_ha_turn_off_lights">Выключать лампы при остановке захвата и при выключении экрана ТВ</string>
+  <string name="ha_lamps_dialog_title">Лампы Home Assistant</string>
+  <string name="ha_lamps_loading">Загружаю список ламп…</string>
+  <string name="ha_lamps_error">Не удалось подключиться к Home Assistant: %1$s</string>
+  <string name="ha_lamps_empty">Ламп не найдено</string>
+  <string name="ha_lamps_hint">Сначала укажите хост и токен доступа, затем выберите зону для каждой лампы</string>
+  <string name="ha_zone_none">Не использовать</string>
+  <string name="ha_zone_average">Средний цвет экрана</string>
+  <string name="ha_zone_left">Левый край</string>
+  <string name="ha_zone_right">Правый край</string>
+  <string name="ha_zone_top">Верх</string>
+  <string name="ha_zone_bottom">Низ</string>
+  <string name="ha_zone_top_left">Верхний левый угол</string>
+  <string name="ha_zone_top_right">Верхний правый угол</string>
+  <string name="ha_zone_bottom_left">Нижний левый угол</string>
+  <string name="ha_zone_bottom_right">Нижний правый угол</string>
+  <string name="ha_lamps_lamp_missing">Сейчас не видна в этом Home Assistant</string>
+  <string name="action_save">Сохранить</string>
+  <string name="error_ha_token_missing">Не задан токен доступа Home Assistant. Откройте Настройки → Подключение → Токен доступа</string>
+  <string name="error_ha_no_lamps">Ни одна лампа Home Assistant не привязана к зоне. Откройте Настройки → Подключение → Лампы и зоны</string>
+
+  <!-- Второе, дополнительное подключение к Home Assistant -->
+  <string name="pref_group_ha_secondary">Дополнительный вывод на Home Assistant</string>
+  <string name="pref_title_ha2_enabled">Также управлять лампами Home Assistant</string>
+  <string name="pref_summary_ha2_enabled">Работает вместе с основным подключением выше — например, основной вывод на WLED, а по бокам ещё и лампы Home Assistant</string>
+
+  <!-- Adalight advanced settings -->
+  <string name="pref_title_adalight_protocol">Протокол Adalight</string>
+  <string-array name="pref_list_adalight_protocol">
+    <item>ADA (Стандарт)</item>
+    <item>LBAPA (LightBerry APA102)</item>
+    <item>AWA (Hyperserial)</item>
+  </string-array>
+  <string-array name="pref_list_adalight_protocol_values">
+    <item>ada</item>
+    <item>lbapa</item>
+    <item>awa</item>
+  </string-array>
+
+  <!-- App Specific Strings -->
+  <string name="toggle_activity_label">Universal Ambient Light (Переключатель)</string>
+  <string name="quick_tile_label">Universal Ambient Light</string>
+  <string name="status_grabber_running">Сервис подсветки запущен</string>
+  <string name="help">Справка</string>
+  <string name="support_project">Поддержать проект</string>
+  <string name="help_title">Как использовать</string>
+  <string name="help_message">Перед использованием приложения необходимо настроить контроллер подсветки:\n\n• WLED: Настройте прошивку WLED на вашем устройстве ESP8266/ESP32\n• Adalight: Подключите Arduino с прошивкой Adalight через USB\n• Hyperion: Установите и настройте сервер Hyperion\n\nПодробные инструкции по настройке смотрите в репозитории GitHub.</string>
+  <string name="help_open_github">Открыть GitHub</string>
+  <string name="help_close">Закрыть</string>
+  <string name="support_project_title">Поддержать проект</string>
+  <string name="support_project_message">Спасибо за интерес к поддержке проекта!\n\nВы можете поддержать разработку через:\n• Boosty\n• Криптовалюту (TON)\n• Оставить отзыв в Google Play\n\nНажмите ниже, чтобы увидеть все доступные варианты.</string>
+  <string name="support_open_details">Подробнее</string>
+  <string name="report_issue">Сообщить о проблеме</string>
+  <string name="leave_review">Оставить отзыв</string>
+  <string name="rating_dialog_title">Оцените Universal Ambient Light</string>
+  <string name="rating_dialog_message">Как бы вы оценили свой опыт использования?</string>
+  <string name="rating_dialog_low_rating_title">Нам жаль это слышать</string>
+  <string name="rating_dialog_low_rating_message">Если вы столкнулись с какими-либо проблемами, пожалуйста, сообщите нам об этом на GitHub. Ваш отзыв помогает нам улучшить приложение.</string>
+  <string name="rating_dialog_report_issue">Сообщить о проблеме</string>
+  <string name="rating_dialog_cancel">Отмена</string>
+  <string name="github_issues_url">https://github.com/vasmarfas/universal-ambient-light/issues</string>
+  <string name="accessibility_service_description">Allow Universal Ambient Light to capture screen content for ambient lighting.</string>
+  <string name="accessibility_disclosure_title">Требуется разрешение специальных возможностей</string>
+  <string name="accessibility_disclosure_message">Это приложение использует API специальных возможностей (AccessibilityService API) для захвата содержимого экрана. Это необходимо для анализа цветов на экране и синхронизации фоновой подсветки (Ambilight) в реальном времени.\n\nДанные экрана обрабатываются локально на вашем устройстве, никуда не сохраняются и не передаются третьим лицам.\n\nЕсли вы не согласны, вы не сможете использовать этот режим захвата.</string>
+  <string name="accessibility_disclosure_button_deny">Отказать</string>
+  <string name="accessibility_disclosure_button_accept">Принять и продолжить</string>
+</resources>

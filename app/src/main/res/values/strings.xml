@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="pref_list_framerate">
+    <item>10 fps</item>
+    <item>15 fps</item>
+    <item>24 fps</item>
+    <item>30 fps</item>
+    <item>60 fps</item>
+  </string-array>
+  <string name="app_name">Universal Ambient Light</string>
+  <string name="pref_title">Settings</string>
+  <!-- notification button -->
+  <string name="notification_exit_button">Exit</string>
+  <!-- Network scanner -->
+  <string name="scanner_description">Find WLED and Hyperion devices automatically</string>
+  <string name="scanner_retry_button">retry</string>
+  <string name="scanner_scan_devices">Scan network</string>
+  <string name="scanner_scanning">Scanning network…</string>
+  <string name="scanner_found_devices">Found devices:</string>
+  <string name="scanner_no_devices_found">No devices found</string>
+  <string name="scanner_device_wled">WLED</string>
+  <string name="scanner_device_hyperion">Hyperion</string>
+  <string name="scanner_device_unknown">Unknown</string>
+  <string name="scanner_device_info">%1$s at %2$s:%3$d</string>
+  <string name="scanner_cancel">Cancel</string>
+  <!-- Network Scanner result -->
+  <!-- Connection settings -->
+  <string name="pref_group_connection">Connection</string>
+  <string name="pref_title_host">Host</string>
+  <string name="pref_title_port">Port</string>
+  <string name="pref_title_led_start_corner">LED Start Corner</string>
+  <string name="pref_title_led_direction">LED Direction</string>
+  <string name="pref_title_led_layout">LED Layout</string>
+  <string name="pref_summary_led_layout">View and edit LED layout on screen</string>
+  <string name="led_layout_top_count_label">Top LEDs count</string>
+  <string name="led_layout_right_count_label">Right LEDs count</string>
+  <string name="led_layout_bottom_count_label">Bottom LEDs count</string>
+  <string name="led_layout_left_count_label">Left LEDs count</string>
+  <string name="led_layout_total_leds">Total LEDs: %1$d</string>
+  <string name="led_layout_active_sides">Active sides</string>
+  <string name="led_layout_side_top">Top</string>
+  <string name="led_layout_side_right">Right</string>
+  <string name="led_layout_side_bottom">Bottom</string>
+  <string name="led_layout_side_left">Left</string>
+  <string name="led_layout_bottom_gap_label">Bottom gap (for soundbar)</string>
+  <string name="led_layout_capture_margin_label">Capture margin (%)</string>
+  <string name="led_layout_capture_margin_top_label">Top capture margin (%)</string>
+  <string name="led_layout_capture_margin_top_help">0–40%. Top edge offset from screen.</string>
+  <string name="led_layout_capture_margin_right_label">Right capture margin (%)</string>
+  <string name="led_layout_capture_margin_right_help">0–40%. Right edge offset from screen.</string>
+  <string name="led_layout_capture_margin_bottom_label">Bottom capture margin (%)</string>
+  <string name="led_layout_capture_margin_bottom_help">0–40%. Bottom edge offset from screen.</string>
+  <string name="led_layout_capture_margin_left_label">Left capture margin (%)</string>
+  <string name="led_layout_capture_margin_left_help">0–40%. Left edge offset from screen.</string>
+    <string name="led_layout_offset_label">LED offset (steps along perimeter)</string>
+    <string name="led_layout_offset_help">Positive – along layout direction, negative – opposite.</string>
+    <string name="led_layout_scan_depth_label">Scan Depth (%)</string>
+    <string name="led_layout_scan_depth_help">Depth of the area to average colors from (1-50%).</string>
+  <string name="led_layout_legend_title">Legend:</string>
+  <string name="led_layout_legend_first_led">LED #1 (first)</string>
+  <string name="led_layout_legend_active_leds">Active LEDs</string>
+  <string name="led_layout_legend_disabled_leds">Disabled LEDs</string>
+  <string name="led_layout_legend_screen">Screen</string>
+  <string name="led_side_mode_on">On</string>
+  <string name="led_side_mode_off">Off</string>
+  <string name="led_side_mode_none">None</string>
+  <string name="led_direction_clockwise">Clockwise</string>
+  <string name="led_direction_counterclockwise">Counterclockwise</string>
+  <string name="led_corner_top_left">Top left</string>
+  <string name="led_corner_top_right">Top right</string>
+  <string name="led_corner_bottom_right">Bottom right</string>
+  <string name="led_corner_bottom_left">Bottom left</string>
+  <string name="action_back">Back</string>
+  <string name="action_ok">OK</string>
+  <string name="action_cancel">Cancel</string>
+  <string name="action_close">Close</string>
+  <string name="action_copy">Copy</string>
+  <string name="home_effects">Effects</string>
+  <string name="home_toggle_power">Toggle power</string>
+  <string name="home_settings">Settings</string>
+  <string name="unit_ms">%1$d ms</string>
+  <string name="debug_info_title">Debug Info</string>
+  <string name="debug_info_copied">Copied to clipboard</string>
+  <string name="pref_category_debug">Debug</string>
+  <string name="pref_title_device_info">Device Info</string>
+  <string name="pref_summary_device_info">Show device information for debugging</string>
+  <string name="scan_scanning">Scanning: %1$s</string>
+  <string name="scan_hostname">Hostname: %1$s</string>
+  <string name="scan_protocol">Protocol: %1$s</string>
+  <string name="rating_stars_desc">%1$d stars</string>
+  <string name="usb_service_unavailable">USB service is not available on this device</string>
+  <string name="usb_no_serial_devices">No USB serial devices found. Connect your device via USB OTG</string>
+  <string name="usb_permission_denied_toast">USB device permission denied. Please allow USB access.</string>
+  <string name="usb_permission_prompt">Confirm access to the USB device</string>
+  <string name="pref_title_priority">Message Priority</string>
+  <string name="pref_title_reconnect">Reconnect</string>
+  <string name="pref_title_reconnect_delay">Reconnect Delay</string>
+  <string name="pref_title_standby_keepalive">Keep running in standby</string>
+  <string name="pref_summary_standby_keepalive">Keep sending data to the LEDs while the TV screen is off. When disabled, the app turns the LEDs off and stays silent in standby, resuming when the screen turns back on</string>
+  <!-- Capture source -->
+  <string name="pref_title_capture_source">Capture Source</string>
+  <string-array name="pref_list_capture_source">
+    <item>Screen</item>
+    <item>Camera</item>
+  </string-array>
+  <string-array name="pref_list_capture_source_values">
+    <item>screen</item>
+    <item>camera</item>
+  </string-array>
+  <string name="pref_title_camera_setup">Camera Corner Setup</string>
+  <string name="pref_summary_camera_setup">Adjust the 4 corners to match your TV screen in the camera view</string>
+  <string name="camera_setup_title">Camera Setup</string>
+  <string name="camera_setup_instruction">Drag the 4 corners to match the edges of your TV screen</string>
+  <string name="camera_auto_frame_button">Find the TV</string>
+  <string name="camera_auto_frame_not_found">TV screen not found — corners left unchanged</string>
+  <string name="camera_auto_frame_too_dark">Too dark to find the screen — turn the TV on and try again</string>
+  <string name="camera_auto_frame_no_screen">Nothing screen-shaped in the frame — point the camera at the TV</string>
+  <string name="camera_auto_frame_no_frames">The camera did not deliver any frames</string>
+  <string name="camera_setup_save">Save</string>
+  <string name="camera_setup_reset">Reset</string>
+  <string name="camera_permission_required">Camera permission is required for camera capture mode</string>
+  <string name="camera_grant_permission">Grant Permission</string>
+  <string name="camera_capturing_status">Camera is capturing…</string>
+  <!-- Capture Method -->
+  <string name="pref_title_capture_method">Capture Method</string>
+  <string-array name="pref_list_capture_method">
+    <item>MediaProjection (Standard)</item>
+    <item>Scrcpy (ADB, ~30ms) ★★★★★</item>
+    <item>ADB Stream (H.264, ~50ms)</item>
+    <item>Screencap (Shell / ADB)</item>
+    <item>Screencap (Root)</item>
+    <item>ADB (Screenshot, ~200ms)</item>
+    <item>Accessibility (Android 11+)</item>
+    <item>MTK Hardware Capture (Root)</item>
+  </string-array>
+  <string-array name="pref_list_capture_method_values">
+    <item>media_projection</item>
+    <item>scrcpy</item>
+    <item>adb_stream</item>
+    <item>screencap_shell</item>
+    <item>screencap_root</item>
+    <item>adb_local</item>
+    <item>accessibility</item>
+    <item>mtk_thal_capture</item>
+  </string-array>
+
+  <string name="pref_title_adb_port">ADB Port</string>
+  <string name="pref_btn_adb_pair">Test ADB Connection</string>
+  <string name="pref_summary_adb_pair">Check connection and authorize the key on the TV</string>
+  <string name="adb_pair_title">ADB Authorization</string>
+  <string name="adb_pair_instruction">On first connection the TV will show an "Allow wireless debugging?" dialog — tap Allow on the TV screen. Make sure Wireless Debugging is enabled in Developer Options.</string>
+  <string name="error_adb_pairing_required">ADB pairing required. Open Settings → Capture method → Test ADB Connection → Pair with code.</string>
+  <string name="adb_pair_code_title">Pair with code (Android 11+, one-time)</string>
+  <string name="adb_pair_code_hint">6-digit pairing code</string>
+  <string name="adb_pair_port_hint">Pairing port (from that screen)</string>
+  <string name="adb_pair_code_instruction">Manual fallback: open Wireless debugging → "Pair device with pairing code" and type the PORT and 6-digit CODE shown there. The automatic button above is easier — it reads the code itself and pairs without leaving that screen.</string>
+  <string name="adb_autopair_btn">Pair automatically (Accessibility)</string>
+  <string name="adb_autopair_waiting">Enable Wireless debugging if needed — the app will open it, then read the code and pair by itself.</string>
+  <string name="adb_autopair_need_accessibility">Turn on Accessibility for this app on the next screen, then tap "Pair automatically" again.</string>
+  <string name="adb_enable_accessibility_toast">Find "%1$s" in the list, open it and turn it ON — then go back and tap "Pair automatically".</string>
+  <string name="adb_autopair_consent_title">Automatic pairing — please confirm</string>
+  <string name="adb_autopair_consent_text">To capture the screen, the app connects to this device\'s own ADB over localhost (127.0.0.1). With your permission it will: open Wireless debugging, read the one-time 6-digit pairing code shown on that screen using the Accessibility service, and tap the “Pair device with pairing code” option for you. It connects only locally, does not change any other settings, and sends nothing off the device. Continue?</string>
+  <string name="adb_autopair_consent_continue">Continue</string>
+  <string name="adb_autopair_timeout">Timed out. Make sure Wireless debugging is ON, then tap "Pair automatically" again.</string>
+  <string name="adb_pair_manual_label">Enter manually</string>
+  <string name="adb_pair_btn">Pair</string>
+  <string name="adb_pairing">Pairing…</string>
+  <string name="adb_pair_success">Paired! Now tap Test ADB Connection.</string>
+  <string name="adb_pair_failed">Pairing failed: %1$s</string>
+  <string name="adb_test_success">Connected! ADB key authorized.</string>
+  <string name="adb_test_failed">Connection failed: %s\n\nMake sure Wireless Debugging is enabled and accept the dialog on the TV.</string>
+  <string name="adb_status_label">Developer options: %1$s\nADB: %2$s</string>
+  <string name="adb_legacy_title">Android 10 and older</string>
+  <string name="adb_legacy_btn">Connect (legacy, no pairing)</string>
+  <string name="adb_status_on">ON</string>
+  <string name="adb_status_off">OFF</string>
+  <string name="adb_btn_open_dev_options">Open Developer Options</string>
+  <string name="adb_btn_how_to_enable_dev_options">How to enable Developer Options</string>
+  <string name="adb_btn_open_wireless_debug">Open Wireless Debugging</string>
+  <string name="adb_toast_dev_options_help">Enable Developer Options first: Settings → About phone → tap Build number 7 times</string>
+  <string name="adb_toast_cannot_open_dev">Cannot open Developer Options on this device</string>
+  <string name="adb_toast_cannot_open_wireless">Cannot open Wireless Debugging on this device</string>
+
+  <!-- Capturing settings -->
+  <string name="pref_group_capturing">Capturing</string>
+  <string name="pref_title_framerate">Capture Rate</string>
+  <string name="pref_title_capture_quality">Capture Quality</string>
+  <string name="pref_title_color_brightness">Brightness</string>
+  <string name="pref_title_color_contrast">Contrast</string>
+  <string name="pref_title_color_black_level">Black Level</string>
+  <string name="pref_title_color_white_level">White Level</string>
+  <string name="pref_title_color_saturation">Saturation</string>
+  <string name="pref_title_color_processing_enabled">Color Processing</string>
+  <string name="pref_group_color_per_channel">Per-channel correction (R/G/B)</string>
+  <string name="pref_title_color_brightness_r">Red brightness</string>
+  <string name="pref_title_color_brightness_g">Green brightness</string>
+  <string name="pref_title_color_brightness_b">Blue brightness</string>
+  <string name="pref_title_color_gamma_r">Red gamma</string>
+  <string name="pref_title_color_gamma_g">Green gamma</string>
+  <string name="pref_title_color_gamma_b">Blue gamma</string>
+  <string name="pref_color_preview_title">Preview (after color processing)</string>
+  <string name="pref_color_preview_hint">Reflects what will be sent to the LED strip. The animations on the Home screen do NOT use these settings.</string>
+  <string name="pref_group_border_detection">Black bar (letterbox) detection</string>
+  <string name="pref_title_border_detection_enabled">Auto-detect letterbox</string>
+  <string name="pref_summary_border_detection_enabled">Ignore black bars around the picture (works for 16:9, 1.85:1, 2.39:1 content). Off by default.</string>
+  <string name="pref_title_border_threshold">Black threshold (RGB 0–64)</string>
+  <string name="pref_title_border_check_interval">Detection interval (frames)</string>
+  <string name="pref_group_camera_idle">Camera Sleep Mode</string>
+  <string name="pref_title_camera_idle_enabled">Enable sleep mode</string>
+  <string name="pref_summary_camera_idle_enabled">Camera capture receives no standby signal from the TV, so a powered-off screen keeps streaming sensor noise to the strip. When enabled, the LEDs turn off once the picture goes blank, and frame transmission pauses until the picture returns. Disabled by default.</string>
+  <string name="pref_title_camera_idle_timeout">Sleep delay (seconds)</string>
+  <string name="pref_title_camera_idle_dark_level">Blank screen threshold (0–96)</string>
+  <string name="pref_title_camera_idle_motion_level">Motion sensitivity threshold (1–64)</string>
+  <string name="pref_title_camera_idle_static">Sleep on a static picture</string>
+  <string name="pref_summary_camera_idle_static">When enabled, frame transmission also pauses if the picture stops changing (e.g. a paused video or a static menu); the strip retains its last displayed colors. Disabled by default, as an extended static scene will freeze the strip\'s colors.</string>
+  <string name="unit_rgb">RGB</string>
+  <string name="unit_frames">frames</string>
+  <string name="unit_seconds">s</string>
+  <string-array name="pref_list_capture_quality">
+    <item>Low (64px)</item>
+    <item>Medium (128px)</item>
+    <item>High (256px)</item>
+    <item>Ultra (512px)</item>
+    <item>720p (unstable)</item>
+    <item>1080p (unstable)</item>
+    <item>1440p (unstable)</item>
+    <item>2160p (unstable)</item>
+  </string-array>
+  <string-array name="pref_list_capture_quality_values">
+    <item>64</item>
+    <item>128</item>
+    <item>256</item>
+    <item>512</item>
+    <item>720</item>
+    <item>1080</item>
+    <item>1440</item>
+    <item>2160</item>
+  </string-array>
+  <!-- General settings -->
+  <string name="pref_group_general">General</string>
+  <string name="pref_title_boot">Grab on Boot</string>
+  <string name="pref_title_language">Language</string>
+  <string name="pref_key_language">language</string>
+  <string-array name="pref_list_language">
+    <item>Default</item>
+    <item>English</item>
+    <item>Русский</item>
+    <item>Deutsch</item>
+  </string-array>
+  <string-array name="pref_list_language_values">
+    <item>default</item>
+    <item>en</item>
+    <item>ru</item>
+    <item>de</item>
+  </string-array>
+
+  <string name="error_empty_host">Server address is not set. Open Settings → Connection → Host and enter the IP of your Hyperion/HyperHDR/WLED device, or use Scan network</string>
+  <string name="error_empty_port">Port is not set. Open Settings → Connection → Port (19400 for Hyperion, 4048 for WLED/DDP)</string>
+  <string name="error_invalid_port">Invalid port: %1$d. It must be between 1 and 65535</string>
+  <string name="setup_required_title">Setup required</string>
+  <string name="setup_required_open_settings">Open settings</string>
+  <string name="setup_required_cancel">Cancel</string>
+  <string name="error_invalid_led_counts">Total LED count is 0 — set the per-side LED counts in Settings → LED Layout</string>
+  <string name="error_server_unreachable">Could not connect to the hyperion server. Check your settings and make sure hyperion is running</string>
+  <string name="error_adalight_unreachable">Could not connect to Adalight device. Make sure: 1) Device is connected via USB OTG cable, 2) USB permission is granted when prompted, 3) Correct baud rate is set in settings</string>
+  <string name="error_connection_lost">The connection to your hyperion server has been lost, now stopping the grabber</string>
+  <string name="error_adalight_connection_lost">The connection to your Adalight device has been lost, now stopping the grabber</string>
+  <string name="error_media_projection_denied">Screen recording permission was denied. Please grant permission when prompted</string>
+  <string name="error_screen_recording_not_available">Screen recording is not available on this device</string>
+  <string name="url_dialog_title">Open Link</string>
+  <string name="url_dialog_message">Scan the QR code or copy the link below to open it in a browser:</string>
+  <string name="url_dialog_qr_description">QR code for the link</string>
+  <string name="url_dialog_open_link">Open Link</string>
+  <string name="help_readme_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/README.md</string>
+  <string name="support_url">https://github.com/vasmarfas/universal-ambient-light/blob/master/SUPPORT.md</string>
+  <string name="notification_channel_label">Universal Ambient Light Notifications</string>
+  <string name="notification_description">Currently grabbing screen content</string>
+  <string name="pref_title_use_avg_color">Send Average Screen Color</string>
+  <string name="pref_title_connection_type">Connection Type</string>
+  <string-array name="pref_list_connection_type">
+    <item>Hyperion</item>
+    <item>WLED</item>
+    <item>Adalight</item>
+    <item>Home Assistant</item>
+  </string-array>
+  <string-array name="pref_list_connection_type_values">
+    <item>hyperion</item>
+    <item>wled</item>
+    <item>adalight</item>
+    <item>homeassistant</item>
+  </string-array>
+  <string name="pref_title_adalight_baudrate">Adalight Baud Rate</string>
+  <string-array name="pref_list_adalight_baudrate">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200 (recommended)</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+  </string-array>
+  <string-array name="pref_list_adalight_baudrate_values" translatable="false">
+    <item>9600</item>
+    <item>19200</item>
+    <item>38400</item>
+    <item>57600</item>
+    <item>115200</item>
+    <item>230400</item>
+    <item>250000</item>
+    <item>500000</item>
+  </string-array>
+  <string name="pref_title_wled_color_order">WLED Color Order</string>
+  <string-array name="pref_list_wled_color_order">
+    <item>RGB</item>
+    <item>GRB</item>
+    <item>BRG</item>
+    <item>RBG</item>
+    <item>GBR</item>
+    <item>BGR</item>
+  </string-array>
+  <string-array name="pref_list_wled_color_order_values">
+    <item>rgb</item>
+    <item>grb</item>
+    <item>brg</item>
+    <item>rbg</item>
+    <item>gbr</item>
+    <item>bgr</item>
+    </string-array>
+  
+  <!-- Smoothing settings -->
+  <string name="pref_group_smoothing">Smoothing</string>
+  <string name="pref_title_smoothing_enabled">Enable Smoothing</string>
+  <string name="pref_title_smoothing_preset">Smoothing Preset</string>
+  <string-array name="pref_list_smoothing_preset">
+    <item>Off</item>
+    <item>Responsive</item>
+    <item>Balanced</item>
+    <item>Smooth</item>
+  </string-array>
+  <string-array name="pref_list_smoothing_preset_values">
+    <item>off</item>
+    <item>responsive</item>
+    <item>balanced</item>
+    <item>smooth</item>
+  </string-array>
+  <string name="pref_title_settling_time">Settling Time (ms)</string>
+  <string name="pref_title_output_delay">Output Delay (ms)</string>
+  <string name="pref_title_update_frequency">Update Frequency</string>
+  <string-array name="pref_list_update_frequency">
+    <item>20 Hz</item>
+    <item>25 Hz</item>
+    <item>30 Hz</item>
+    <item>40 Hz</item>
+    <item>50 Hz</item>
+    <item>60 Hz</item>
+  </string-array>
+  <string-array name="pref_list_update_frequency_values">
+    <item>20</item>
+    <item>25</item>
+    <item>30</item>
+    <item>40</item>
+    <item>50</item>
+    <item>60</item>
+  </string-array>
+  
+  <!-- WLED advanced settings -->
+  <string name="pref_title_wled_protocol">WLED Protocol</string>
+  <string-array name="pref_list_wled_protocol">
+    <item>UDP Raw (port 19446)</item>
+    <item>DDP (port 4048)</item>
+  </string-array>
+  <string-array name="pref_list_wled_protocol_values">
+    <item>udp_raw</item>
+    <item>ddp</item>
+  </string-array>
+  <string name="pref_title_wled_rgbw">WLED RGBW</string>
+  <string name="pref_summary_wled_rgbw_raw">Ignored on port 19446: it has no white channel. Use DDP for RGBW strips</string>
+  <string name="pref_title_wled_brightness">WLED brightness</string>
+  <string name="pref_summary_wled_brightness_max">255 — colors are sent unchanged</string>
+  <!-- Home Assistant -->
+  <string name="pref_title_ha_token">Access token</string>
+  <string name="pref_summary_ha_token_empty">Long-lived token from your Home Assistant profile → Security</string>
+  <string name="pref_summary_ha_token_set">Token saved</string>
+  <string name="pref_title_ha_lamps">Lights and zones</string>
+  <string name="pref_summary_ha_lamps_empty">No lights configured</string>
+  <string name="pref_summary_ha_lamps_count">Lights configured: %1$d</string>
+  <string name="pref_title_ha_update_interval">Update rate</string>
+  <string-array name="pref_list_ha_update_interval">
+    <item>10 per second (100 ms)</item>
+    <item>150 ms</item>
+    <item>4 per second (250 ms)</item>
+    <item>2 per second (500 ms)</item>
+    <item>1 per second</item>
+    <item>Every 2 seconds</item>
+    <item>Every 5 seconds</item>
+  </string-array>
+  <string-array name="pref_list_ha_update_interval_values" translatable="false">
+    <item>100</item>
+    <item>150</item>
+    <item>250</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+    <item>5000</item>
+  </string-array>
+  <string name="pref_title_ha_change_threshold">Color change threshold</string>
+  <string name="pref_summary_ha_change_threshold">0–255. An update is sent only when the zone color changes at least this much</string>
+  <string name="pref_title_ha_transition">Transition</string>
+  <string-array name="pref_list_ha_transition">
+    <item>Off</item>
+    <item>150 ms</item>
+    <item>300 ms</item>
+    <item>500 ms</item>
+    <item>1 second</item>
+    <item>2 seconds</item>
+  </string-array>
+  <string-array name="pref_list_ha_transition_values" translatable="false">
+    <item>0</item>
+    <item>150</item>
+    <item>300</item>
+    <item>500</item>
+    <item>1000</item>
+    <item>2000</item>
+  </string-array>
+  <string name="pref_title_ha_brightness_mode">Brightness</string>
+  <string-array name="pref_list_ha_brightness_mode">
+    <item>Follows the picture</item>
+    <item>Don\'t change</item>
+  </string-array>
+  <string-array name="pref_list_ha_brightness_mode_values" translatable="false">
+    <item>screen</item>
+    <item>keep</item>
+  </string-array>
+  <string name="pref_title_ha_brightness">Brightness limit</string>
+  <string name="pref_summary_ha_brightness_max">255 — full lamp brightness</string>
+  <string name="pref_title_ha_dark_off">Turn off on dark scenes</string>
+  <string name="pref_summary_ha_dark_off">Lights switch off when the zone goes darker than the threshold and come back with the picture</string>
+  <string name="pref_title_ha_dark_threshold">Dark threshold</string>
+  <string name="pref_title_ha_turn_off_lights">Turn lights off on stop</string>
+  <string name="pref_summary_ha_turn_off_lights">Switch the lights off when capture stops or the TV screen goes off</string>
+  <string name="ha_lamps_dialog_title">Home Assistant lights</string>
+  <string name="ha_lamps_loading">Loading lights…</string>
+  <string name="ha_lamps_error">Couldn\'t reach Home Assistant: %1$s</string>
+  <string name="ha_lamps_empty">No lights found</string>
+  <string name="ha_lamps_hint">Set the host and access token first, then pick a zone for each light</string>
+  <string name="ha_zone_none">Not used</string>
+  <string name="ha_zone_average">Average screen color</string>
+  <string name="ha_zone_left">Left edge</string>
+  <string name="ha_zone_right">Right edge</string>
+  <string name="ha_zone_top">Top edge</string>
+  <string name="ha_zone_bottom">Bottom edge</string>
+  <string name="ha_zone_top_left">Top-left corner</string>
+  <string name="ha_zone_top_right">Top-right corner</string>
+  <string name="ha_zone_bottom_left">Bottom-left corner</string>
+  <string name="ha_zone_bottom_right">Bottom-right corner</string>
+  <string name="ha_lamps_lamp_missing">Not seen on this Home Assistant right now</string>
+  <string name="action_save">Save</string>
+  <string name="error_ha_token_missing">Home Assistant access token is not set. Open Settings → Connection → Access token</string>
+  <string name="error_ha_no_lamps">No Home Assistant lights are assigned to zones. Open Settings → Connection → Lights and zones</string>
+
+  <!-- Second, additional Home Assistant output -->
+  <string name="pref_group_ha_secondary">Additional Home Assistant output</string>
+  <string name="pref_title_ha2_enabled">Also drive Home Assistant lights</string>
+  <string name="pref_summary_ha2_enabled">Runs alongside the main connection above — e.g. main output on WLED, plus side lamps on Home Assistant</string>
+
+  <!-- Adalight advanced settings -->
+  <string name="pref_title_adalight_protocol">Adalight Protocol</string>
+  <string-array name="pref_list_adalight_protocol">
+    <item>ADA (Standard)</item>
+    <item>LBAPA (LightBerry APA102)</item>
+    <item>AWA (Hyperserial)</item>
+  </string-array>
+  <string-array name="pref_list_adalight_protocol_values">
+    <item>ada</item>
+    <item>lbapa</item>
+    <item>awa</item>
+  </string-array>
+
+  <!-- App Specific Strings -->
+  <string name="toggle_activity_label">Universal Ambient Light (Toggle)</string>
+  <string name="quick_tile_label">Universal Ambient Light</string>
+  <string name="status_grabber_running">Ambient light service is running</string>
+  <string name="help">Help</string>
+  <string name="support_project">Support Project</string>
+  <string name="help_title">How to use</string>
+  <string name="help_message">Before using this app, you need to set up your LED controller:\n\n• WLED: Configure WLED firmware on your ESP8266/ESP32 device\n• Adalight: Connect Arduino with Adalight firmware via USB\n• Hyperion: Install and configure Hyperion server\n\nFor detailed setup instructions, please visit the GitHub repository.</string>
+  <string name="help_open_github">Open GitHub</string>
+  <string name="help_close">Close</string>
+  <string name="support_project_title">Support Project</string>
+  <string name="support_project_message">Thank you for your interest in supporting this project!\n\nYou can support the development through:\n• Boosty\n• Cryptocurrency (TON)\n• Leave a review on Google Play\n\nClick below to see all available options.</string>
+  <string name="support_open_details">View Details</string>
+  <string name="report_issue">Report Issue</string>
+  <string name="leave_review">Leave Review</string>
+  <string name="rating_dialog_title">Rate Universal Ambient Light</string>
+  <string name="rating_dialog_message">How would you rate your experience?</string>
+  <string name="rating_dialog_low_rating_title">We\'re sorry to hear that</string>
+  <string name="rating_dialog_low_rating_message">If you encountered any issues, please let us know by reporting them on GitHub. Your feedback helps us improve the app.</string>
+  <string name="rating_dialog_report_issue">Report Issue</string>
+  <string name="rating_dialog_cancel">Cancel</string>
+  <string name="github_issues_url">https://github.com/vasmarfas/universal-ambient-light/issues</string>
+  <string name="accessibility_service_description">Allow Universal Ambient Light to capture screen content for ambient lighting.</string>
+  <string name="accessibility_enable_prompt">Please enable the Accessibility Service for Universal Ambient Light</string>
+  <string name="accessibility_disclosure_title">Accessibility Permission Required</string>
+  <string name="accessibility_disclosure_message">This app uses the AccessibilityService API to capture screen content. This is required to analyze colors on your screen and sync them with your background lights (Ambilight) in real-time.\n\nThe screen data is processed locally on your device, is never saved, and is never transmitted to any third-party servers.\n\nIf you do not agree, you cannot use this capture mode.</string>
+  <string name="accessibility_disclosure_button_deny">Deny</string>
+  <string name="accessibility_disclosure_button_accept">Agree &amp; Continue</string>
+</resources>

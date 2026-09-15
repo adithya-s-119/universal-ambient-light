@@ -1,0 +1,17 @@
+google-services.json
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/caches
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+.kotlin/
+__pycache__/
+/app/full/
+/app/release/

@@ -1,0 +1,154 @@
+package com.vasmarfas.UniversalAmbientLight
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import android.content.IntentFilter
+import android.os.Handler
+import android.os.Looper
+import android.service.quicksettings.Tile
+import android.service.quicksettings.TileService
+import android.widget.Toast
+import androidx.core.app.TaskStackBuilder
+import androidx.core.content.ContextCompat
+import com.vasmarfas.UniversalAmbientLight.common.BootActivity
+import com.vasmarfas.UniversalAmbientLight.common.ScreenGrabberService
+import com.vasmarfas.UniversalAmbientLight.common.util.AnalyticsHelper
+
+class QuickTileService : TileService() {
+    private val REMOVE_LISTENER_DELAY = 1000 * 10 // 10 second delay to remove listener
+    private val mHandle = Handler(Looper.getMainLooper())
+
+    private val mMessageReceiver = object : BroadcastReceiver() {
+        override fun onReceive(context: Context, intent: Intent) {
+            val tile = qsTile
+            if (tile != null) {
+                val running = intent.getBooleanExtra(ScreenGrabberService.BROADCAST_TAG, false)
+                val error = intent.getStringExtra(ScreenGrabberService.BROADCAST_ERROR)
+                tile.state = if (running) Tile.STATE_ACTIVE else Tile.STATE_INACTIVE
+                tile.updateTile()
+                if (error != null) {
+                    Toast.makeText(baseContext, error, Toast.LENGTH_LONG).show()
+                }
+            }
+        }
+    }
+
+    private val unregisterReceiverRunner = Runnable {
+        try {
+            unregisterReceiver(mMessageReceiver)
+        } catch (_: IllegalArgumentException) {
+            // Context.unregisterReceiver, в отличие от LocalBroadcastManager, бросает
+            // исключение, если приёмник уже снят; для нас это не ошибка.
+        }
+        mIsListening = false
+    }
+
+    override fun onStartListening() {
+        super.onStartListening()
+        mHandle.removeCallbacksAndMessages(null)
+        if (!mIsListening) {
+            ContextCompat.registerReceiver(
+                this,
+                mMessageReceiver,
+                IntentFilter(ScreenGrabberService.BROADCAST_FILTER),
+                ContextCompat.RECEIVER_NOT_EXPORTED
+            )
+            mIsListening = true
+        }
+        if (isServiceRunning) {
+            val intent = Intent(this, ScreenGrabberService::class.java)
+            intent.action = ScreenGrabberService.GET_STATUS
+            startService(intent)
+        } else {
+            val tile = qsTile
+            if (tile != null) {
+                tile.state = Tile.STATE_INACTIVE
+                tile.updateTile()
+            }
+        }
+    }
+
+    override fun onStopListening() {
+        super.onStopListening()
+        mHandle.postDelayed(unregisterReceiverRunner, REMOVE_LISTENER_DELAY.toLong())
+    }
+
+    override fun onDestroy() {
+        // Отложенный runner мёртвого экземпляра иначе сбросил бы флаг у нового, а приёмник
+        // утёк бы вместе с сервисом (has leaked IntentReceiver)
+        mHandle.removeCallbacksAndMessages(null)
+        unregisterReceiverRunner.run()
+        super.onDestroy()
+    }
+
+    override fun onClick() {
+        val tile = qsTile
+        if (tile != null) {
+            tile.updateTile()
+            val tileState = tile.state
+            if (tileState == Tile.STATE_ACTIVE) {
+                AnalyticsHelper.logQuickTileUsed(this)
+                val intent = Intent(this, ScreenGrabberService::class.java)
+                intent.action = ScreenGrabberService.ACTION_EXIT
+                startService(intent)
+            } else {
+                AnalyticsHelper.logQuickTileUsed(this)
+                val runner = Runnable {
+                    val setupStarted = startSetupIfNeeded()
+
+                    if (!setupStarted) {
+                        val i = Intent(this, BootActivity::class.java)
+                        i.addFlags(
+                            Intent.FLAG_ACTIVITY_NEW_TASK
+                                    or Intent.FLAG_ACTIVITY_NO_ANIMATION
+                                    or Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS
+                                    or Intent.FLAG_ACTIVITY_NO_HISTORY
+                        )
+                        startActivity(i)
+                    }
+                }
+                if (isLocked) {
+                    unlockAndRun(runner)
+                } else {
+                    runner.run()
+                }
+            }
+        }
+    }
+
+    private val isServiceRunning: Boolean
+        get() = ScreenGrabberService.sInstanceRunning
+
+    /** Открывает экран настроек, если параметры подключения не заданы
+     *
+     * @return true, если настройка была запущена
+     */
+    private fun startSetupIfNeeded(): Boolean {
+        val error = ScreenGrabberService.validateSettings(applicationContext)
+        if (error != null) {
+            Toast.makeText(applicationContext, error.message, Toast.LENGTH_LONG).show()
+
+            val settingsIntent = Intent(this, MainActivity::class.java)
+            settingsIntent.action = Intent.ACTION_MAIN
+            settingsIntent.addCategory(Intent.CATEGORY_LAUNCHER)
+            settingsIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+
+            // TaskStackBuilder нужен, чтобы после закрытия настроек открылась MainActivity
+            TaskStackBuilder.create(this)
+                .addNextIntentWithParentStack(settingsIntent)
+                .startActivities()
+
+            return true
+        }
+
+        return false
+    }
+
+    companion object {
+        private var mIsListening = false
+
+        val isListening: Boolean
+            get() = mIsListening
+    }
+}
